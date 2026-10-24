@@ -1,0 +1,29 @@
+# Day 5 — Linux Fundamentals for SOC Analyst L1
+
+## Objectives
+- Understand the Linux filesystem and terminal.
+- Practise navigating directories and managing files.
+- Learn commands for reading and searching logs.
+- Understand users, permissions and processes.
+- Investigate simulated SSH authentication events.
+
+## Environment
+- Windows laptop
+- Ubuntu on WSL
+- Bash terminal
+- Synthetic authentication logs
+
+## Commands Practised
+`pwd`, `ls`, `cd`, `mkdir`, `cat`, `less`, `head`, `tail`, `grep`, `sort`, `uniq`, `awk`, `wc`, `chmod`, `whoami`, `id`, `ps`, `top`, `df`, `ip`
+
+## Investigation Summary
+Six failed authentication records were found in the sample log. Five targeted Alice from the same source IP. A successful public-key login for Alice was also recorded from a different source IP.
+
+## Conclusion
+The repeated failures warrant further investigation, but the synthetic data does not establish that an account was compromised.
+
+## Key Learning
+Log analysis requires filtering, counting, correlating evidence and documenting uncertainty. A suspicious pattern is not automatically proof of an attack.
+
+## Limitations
+This was a simulated lab. No production system or live attacker was investigated.
